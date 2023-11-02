@@ -151,7 +151,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   line-height: 1;
   text-align: left;
   padding: 180px 10% 10px 10%;
@@ -164,7 +164,7 @@ img {
   font-weight: 600;
   font-style: normal;
   color: var(--steel-blue-300);
-  transition: background 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 
 .position {
@@ -178,11 +178,11 @@ line-height: 1.4;
 }
 
 #welcome-section input[type='submit'] {
-  background-color: var(--steel-blue-700);
+  background-color: var(--steel-blue-600);
   color: var(--steel-blue-50);
   font-size: 2rem;
   font-weight: 600;
-  max-width: 180px;
+  max-width: 200px;
   width: 100%;
   height: 2em;
   margin: 20px 0;
@@ -217,7 +217,7 @@ line-height: 1.4;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 10px 10% 10px 10%;
   background-color: #000;
   background-image: linear-gradient(0deg, var(--steel-blue-700) 0%, var(--steel-blue-950) 100%);
@@ -266,7 +266,7 @@ line-height: 1.4;
   display: flex;
   align-items: center;
   transition: width 0.25s;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .progress-bar-text {
@@ -456,7 +456,7 @@ footer i {
   }
 
   .skills {
-    height: 150vh;
+    height: auto;
   }
 }
 
@@ -467,12 +467,12 @@ footer i {
   }
 
   body {
-    font-size: 2.3em;
+    font-size: 2.8em;
     overflow: auto;
   } 
   
   h1 {
-    font-size: 5.2rem;
+    font-size: 6.5rem;
   }
 
   .nav {
@@ -489,7 +489,8 @@ footer i {
   }
 
   .welcome-section {
-    min-height: 120vh;
+    height: auto;
+    padding: 80px 10% 10px 10%;
   }
 
   .creative {
@@ -497,14 +498,24 @@ footer i {
   }
 
   .about-me {
-    font-size: 2.3rem;
-    height: 100vh;
+    font-size: 2.8rem;
+    height: auto;
   }
 
   .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: nowrap;
-    height: 200vh;
+    height: auto;
   }
+
+  .progress {
+    height: 20px;
+    width: 180%;
+  }
+  
 
   .projects-section-header {
     font-size: 4rem;
@@ -512,16 +523,16 @@ footer i {
 
   .projects-section {
     padding: 6rem 1rem;
-    min-height: 300vh;
+    height: auto;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-    min-height: 300vh;
+    height: auto;
   }
 
   .contact-section-header > h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   footer {

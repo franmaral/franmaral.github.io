@@ -47,7 +47,7 @@
       <p><span class="heyiam">Hey there!, I'm-</span></p>
       <h1>Fran Martínez.</h1>
       <p class="position">Technical Writer</p>
-      <input id="submit" onclick="location.href='./pages/resume.html';" type="submit" value="Go to Resume" class="button">
+      <input id="submit" onclick="location.href='./pages/resume.html';" type="button" value="Go to Resume" class="button">
       <div id="creative" class="creative">
         <p>XML specialist and self-taught developer with an
           interest in Computer Science.</p>
@@ -76,7 +76,12 @@
     <section id="myskills" class="myskills">
       <h3>State of Skills</h3>
       <div id="skills" class="skills">
+
           <div class="progress-section_1">
+
+            <!-- Markup Languages -->
+
+            <p class="titlemargin"><span class="titleskills">Markup Languages</span></p>
             <div class="progress-block">
               <p>XML</p>
               <div class="progress">
@@ -100,20 +105,39 @@
                     <span class="progress-bar-text">70%</span>
                 </div>
               </div>
+            </div>  
+            <div class="progress-block">
+              <p>Markdown</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:95%;">
+                    <span class="progress-bar-text">95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>reStructuredText</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%;">
+                    <span class="progress-bar-text">75%</span>
+                </div>
+              </div>
+            </div>
+                      
+            <!-- Code -->
+            <p class="titlemargin"><span class="titleskills">Code</span></p>
+            <div class="progress-block">
+              <p>Python</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:60%;">
+                    <span class="progress-bar-text">60%</span>
+                </div>
+              </div>
             </div>
             <div class="progress-block">
               <p>Javascript</p>
               <div class="progress">
                 <div class="progress-bar" style="width:45%;">
                     <span class="progress-bar-text">45%</span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-block">
-              <p>Python</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:60%;">
-                    <span class="progress-bar-text">60%</span>
                 </div>
               </div>
             </div>
@@ -125,16 +149,37 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="progress-section_1">
             <div class="progress-block">
-              <p>Markdown</p>
+              <p>JSON</p>
               <div class="progress">
-                <div class="progress-bar" style="width:80%;">
-                    <span class="progress-bar-text">80%</span>
+                <div class="progress-bar" style="width:60%;">
+                    <span class="progress-bar-text">60%</span>
                 </div>
               </div>
             </div>
+            <div class="progress-block">
+              <p>VB Script</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%;">
+                    <span class="progress-bar-text">75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Selenium IDE</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:45%;">
+                    <span class="progress-bar-text">45%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+          <!-- TW Tools -->
+
+          <div class="progress-section_2">
+            <p class="titlemargin"><span class="titleskills">TW Tools</span></p>
             <div class="progress-block">
               <p>Arbortex</p>
               <div class="progress">
@@ -144,21 +189,57 @@
               </div>
             </div>
             <div class="progress-block">
-              <p>Static Sites</p>
+              <p>Oxigen XML Editor</p>
               <div class="progress">
-                <div class="progress-bar" style="width:70%;">
-                    <span class="progress-bar-text">70%</span>
+                <div class="progress-bar" style="width:50%;">
+                    <span class="progress-bar-text">50%</span>
                 </div>
               </div>
             </div>
             <div class="progress-block">
-              <p>Wordpress</p>
+              <p>MKDoks</p>
               <div class="progress">
-                <div class="progress-bar" style="width:75%;">
-                    <span class="progress-bar-text">75%</span>
+                <div class="progress-bar" style="width:80%;">
+                    <span class="progress-bar-text">80%</span>
                 </div>
               </div>
             </div>
+            <div class="progress-block">
+              <p>Jekyll</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:40%;">
+                    <span class="progress-bar-text">40%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Docusaurus</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:30%;">
+                    <span class="progress-bar-text">30%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Antora</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:30%;">
+                    <span class="progress-bar-text">30%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Sphinx</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:25%;">
+                    <span class="progress-bar-text">25%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- App & CMS -->
+
+            <p class="titlemargin"><span class="titleskills">App & CMS</span></p>
             <div class="progress-block">
               <p>Office</p>
               <div class="progress">
@@ -175,8 +256,27 @@
                 </div>
               </div>
             </div>
+            <div class="progress-block">
+              <p>Wordpress</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%;">
+                    <span class="progress-bar-text">75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Sensei LMS</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:45%;">
+                    <span class="progress-bar-text">45%</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="progress-section_1">
+
+          <!-- Technical Writing -->
+          <div class="progress-section_3">
+            <p class="titlemargin"><span class="titleskills">Technical Writing</span></p>
             <div class="progress-block">
               <p>Wrinting</p>
               <div class="progress">
@@ -209,6 +309,46 @@
                 </div>
               </div>
             </div>
+
+            <!-- Spec -->
+
+            <p class="titlemargin"><span class="titleskills">Specs</span></p>
+            <div class="progress-block">
+              <p>S1000D</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%;">
+                    <span class="progress-bar-text">90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>DITA</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:70%;">
+                    <span class="progress-bar-text">60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>Microsoft Writing Style Guide</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:60%;">
+                    <span class="progress-bar-text">60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-block">
+              <p>The Chicago Manual of Style</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:50%;">
+                    <span class="progress-bar-text">50%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Language -->
+
+            <p class="titlemargin"><span class="titleskills">Spoken languages</span></p>
             <div class="progress-block">
               <p>Spanish</p>
               <div class="progress">
@@ -226,11 +366,11 @@
               </div>
             </div>
           </div>
-        </div>
-        </div> 
+  
+      </div> 
     </section>
         
-    <!-- END ABOUT ME SECTION -->
+    <!-- END SKILLS SECTION -->
 
     <!-- START PROJECTS SECTION -->
 

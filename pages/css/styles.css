@@ -421,10 +421,11 @@ section {
 
 .main-interests {
   background-image: linear-gradient(180deg, var(--steel-black) 100%, var(--steel-black) 100%);
+  height: auto;
 }
 
 .main-interests > p:last-of-type {
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 /* Footer */
@@ -485,12 +486,12 @@ footer i {
 
 .skills {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 130vh;
 }
 
 .progress {
@@ -509,6 +510,22 @@ footer i {
   align-items: center;
   transition: width 0.25s;
   border-radius:10px;
+}
+
+.titlemargin {
+  margin-top: 40px;
+}
+
+.titleskills {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--steel-blue-100);
+}
+
+#skills p {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: var(--steel-blue-50);
 }
 
 .progress-bar-text {
@@ -530,6 +547,15 @@ footer i {
 @media (max-width: 75em) {
   html {
     font-size: 60%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 130vh;
   }
 }
 
@@ -558,7 +584,16 @@ footer i {
 
   .iticons {
     padding: 3rem 0;
-}
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+  }
 
 }
 
@@ -578,7 +613,7 @@ footer i {
   }
 
   h1 span {
-    font-size: 6.3rem;
+    font-size: 6.5rem;
   }
 
   #navbar {
@@ -595,24 +630,43 @@ footer i {
 
   /* Sections */
 
+  .position {
+    color: var(--steel-blue-400);
+    font-size: 3.5rem;
+  }
+
   .about {
     height: auto;
   }
 
   .about-skills {
     flex-direction: column;
-    font-weight: 200;
+    font-weight: 400;
   }
 
   .abskills {
     width: auto;
     margin: 5rem 0 0 0;
   }
-  
+
+  /* button */
+
+  #about a {
+    background-color: var(--steel-blue-600);
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 60px;
+    padding: 0.4em 0 0 0;
+  }
+
   /* Contact section */
 
   .contact {
     height: auto;
+  }
+
+  .contact-details {
+    font-size: 3.5rem;
   }
   .contact-links {
     flex-direction: column;
@@ -625,14 +679,14 @@ footer i {
   }
 
   .title {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-weight: 400;
     color: var(--steel-blue-200);
   }
   
   .courseinfo {
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 3rem;
+    font-weight: 300;
     color: var(--steel-blue-50);
   }
 
@@ -738,7 +792,7 @@ footer i {
   /* Sections */
 
   .section {
-    padding: 5px 5% 5px 5%;
+    padding: 5px 5% 0 5%;
     line-height: 1.4;
     background-image: white;
   }
@@ -959,7 +1013,7 @@ footer i {
 
   .myskills {
     background-image: linear-gradient(0deg, white 0%, white 100%);
-    padding: 30px 10% 5px 50px;
+    padding: 20px 10% 20px 50px;
   }
 
   .progress-block > p {
@@ -967,36 +1021,65 @@ footer i {
   }
 
   .skills {
-  width: 80%;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
   }
 
   .progress {
-    width: 250%;
-    border: 1px solid var(--steel-blue-500);
+    height: 15px;
+    width: 180px;
+    border: 1px solid var(--steel-blue-700);
     background-color: #e6f3fa;
+    border-radius: 6px;
+    margin-bottom: 10px;
   }
 
   .progress-bar {
+    background: var(--steel-blue-500);
     border-radius: 10px;
   }
 
+  .titlemargin {
+    margin-top: 30px;
+  }
+  
+  .titleskills {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--steel-blue-700);
+  }
+  
+  #skills p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--steel-blue-800);
+  }
+
   .progress-bar-text {
-    color: var(--steel-blue-950);
+    margin-left: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
   }
 
   /* main-interests */
 
   .main-interests {
-    background-image: linear-gradient(0deg, white 0%, white 100%);
+    padding-top: 5px;
+    background-image: linear-gradient(180deg, var(--steel-blue-50) 0%, var(--steel-blue-300) 100%);
+    color: white;
   }
 
   .main-interests > p:last-of-type {
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 
   }
 
-
   footer {
-    opacity: 0%;
+    background: var(--steel-blue-800);
+    border-top: 0 solid var(--steel-blue-300);
+    font-size: 1.5em;
+    font-weight: 400;
   }
 }

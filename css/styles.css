@@ -546,8 +546,9 @@ footer i {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.75fr;
     height: auto;
+    justify-content: center;
   }
 
   .contact-section-header > h2 {

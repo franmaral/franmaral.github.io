@@ -15,6 +15,23 @@ header {
   font-weight: bold;
 }
 
+.langdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.lang-en {
+
+}
+
+.lang-sp {
+
+}
+
 #main-doc header {
   text-align: left;
   margin: 15px;
@@ -25,11 +42,11 @@ header {
   min-width: 290px;
   top: 0px;
   left: 0px;
-  width: 290px;
+  width: 320px;
   height: 100%;
-  background-color: rgb(247,224,24);
+  background-color: rgb(211, 210, 206);
   border-right: solid;
-  border-color: rgb(194, 176, 18);
+  border-color: rgb(102, 97, 51);
 }
 
 #navbar ul {
@@ -41,7 +58,7 @@ header {
 
 #navbar li {
   position: relative;
-  color: #4f5053;
+  color: rgb(45, 46, 40) 83, 79);
   border-top: 1px solid;
   list-style: none;
   width: 100%;
@@ -52,7 +69,7 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -77,11 +94,12 @@ header {
   color: #4f5053;
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #main-doc {
   position: absolute;
-  margin-left: 290px;
+  margin-left: 320px;
   padding: 20px;
   margin-bottom: 110px;
 }

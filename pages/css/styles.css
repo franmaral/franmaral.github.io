@@ -453,7 +453,7 @@ footer i {
 /* button */
 
 #about a {
-  background-color: var(--steel-blue-600);
+  background-color: var(--steel-blue-500);
   color: var(--steel-blue-50);
   font-size: 3rem;
   font-weight: 600;
@@ -680,7 +680,7 @@ footer i {
     font-size: 3rem;
     font-weight: 600;
     height: 60px;
-    padding: 20px 0 0 0;
+    padding: 15px 0 0 0;
   }
 
   /* Contact section */
@@ -803,7 +803,7 @@ footer i {
 
   h3 {
     font-size: 2rem;
-    margin: 5px 0;
+    margin: 0 0;
     color: var(--steel-blue-700);
   }
 
@@ -908,7 +908,7 @@ footer i {
   }
 
   .contact-details {
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-shadow: 0 0 0 #1f1f1f;
   }
 
@@ -979,11 +979,12 @@ footer i {
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--steel-blue-700);
+  }
 
   .fa {
     color: var(--steel-blue-300);
   }
-}
+
 
 /* education section */
 
@@ -1060,13 +1061,13 @@ footer i {
     width: 180px;
     border: 1px solid var(--steel-blue-700);
     background-color: #e6f3fa;
-    border-radius: 6px;
+    border-radius: 7px;
     margin-bottom: 10px;
   }
 
   .progress-bar {
     background: var(--steel-blue-500);
-    border-radius: 10px;
+    border-radius: 6px;
   }
 
   .titlemargin {
@@ -1100,9 +1101,16 @@ footer i {
     color: white;
   }
 
+  .main-interests > p:first-of-type {
+    padding-top: 10px;
+  }
+
   .main-interests > p:last-of-type {
     padding-bottom: 5px;
+  }
 
+  .main-interests > p {
+    padding-left: 30px;
   }
 
   footer {
@@ -1111,7 +1119,6 @@ footer i {
     border-bottom: 3px solid var(--steel-blue-900);
     font-size: 1.5em;
     font-weight: 400;
-    padding: 3rem 2rem 3.9rem 1rem;
+    padding: 2.5rem 2rem 3.6rem 1rem;
   }
-  
-}
+} 

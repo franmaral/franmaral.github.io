@@ -1,0 +1,12 @@
+/* Extra CSS for MkDocs created by Fran Martinez Almarza */
+
+
+:root, [data-md-color-scheme=default] {
+    --md-default-fg-color--light: #02a6f2;
+}
+
+
+h2 {
+    --md-default-fg-color--light: #02a6f2;
+}
+

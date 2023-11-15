@@ -1,0 +1,686 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An improvement test of MkDocs Documentation">
+      
+      
+        <meta name="author" content="Fran Martinez">
+      
+      
+      
+      
+        <link rel="next" href="about.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>MkDocs Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-mkdocs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="MkDocs Tutorial" class="md-header__button md-logo" aria-label="MkDocs Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="MkDocs Tutorial" class="md-nav__button md-logo" aria-label="MkDocs Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MkDocs Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    INTRODUCTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    PREREQUISITES
+  </a>
+  
+    <nav class="md-nav" aria-label="PREREQUISITES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-python" class="md-nav__link">
+    Installing Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pip" class="md-nav__link">
+    Installing Pip
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    INSTALLATION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    GETTING STARTED
+  </a>
+  
+    <nav class="md-nav" aria-label="GETTING STARTED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-project" class="md-nav__link">
+    Create a New Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-server" class="md-nav__link">
+    Starting the Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-configuration" class="md-nav__link">
+    Initial Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-the-docs" class="md-nav__link">
+    Preview the Docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    WHAT'S NEXT?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-commands" class="md-nav__link">
+    HELP COMMANDS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliography-references-and-tools" class="md-nav__link">
+    BIBLIOGRAPHY, REFERENCES, AND TOOLS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    INTRODUCTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    PREREQUISITES
+  </a>
+  
+    <nav class="md-nav" aria-label="PREREQUISITES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-python" class="md-nav__link">
+    Installing Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-pip" class="md-nav__link">
+    Installing Pip
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    INSTALLATION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    GETTING STARTED
+  </a>
+  
+    <nav class="md-nav" aria-label="GETTING STARTED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-project" class="md-nav__link">
+    Create a New Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-server" class="md-nav__link">
+    Starting the Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-configuration" class="md-nav__link">
+    Initial Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-the-docs" class="md-nav__link">
+    Preview the Docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    WHAT'S NEXT?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-commands" class="md-nav__link">
+    HELP COMMANDS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliography-references-and-tools" class="md-nav__link">
+    BIBLIOGRAPHY, REFERENCES, AND TOOLS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!---
+This is the Markdown index page file for MkDocs, as part of a demo documentation improvement test. Created by Fran Martinez Almarza - Technical Writer position.
+April 27, 2023
+-->
+
+<h1 id="welcome-to-mkdocs">WELCOME TO MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">&para;</a></h1>
+<p><strong>MkDocs</strong> is a a fast, simple, and gorgeous static site generator for building project documentation, that provides several new features and improvements.  </p>
+<ul>
+<li>
+<p>New features include responsive design, customizable color schemes, and <strong>enhanced documentation</strong>. </p>
+</li>
+<li>
+<p>Documentation source files are written in Markdown, and configured with a single YAML configuration file.</p>
+</li>
+<li>
+<p>MkDocs is highly customizable, allowing you to develop your documentation website according to your needs.  </p>
+</li>
+</ul>
+<p>For original and full documentation visit <strong><a href="https://www.mkdocs.org/">mkdocs.org</a></strong>.</p>
+<hr />
+<h2 id="introduction">INTRODUCTION<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This guide will help you <strong>install and preview MkDocs</strong> on your local environment and start building your own customized documentation website.</p>
+<p><img alt="Step by step" src="img/stepbystep.png" /></p>
+<hr />
+<h2 id="prerequisites">PREREQUISITES<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>To install MkDocs, you will need to have installed or available on your system the following:</p>
+<ul>
+<li>A terminal or console</li>
+<li>Python 3.x</li>
+<li>Pip 20.x</li>
+</ul>
+<p>Check if you already have these installed from the command line:</p>
+<pre><code>$ python --version
+Python 3.8.2
+
+$ pip --version
+pip 20.0.2 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
+</code></pre>
+<h3 id="installing-python">Installing Python<a class="headerlink" href="#installing-python" title="Permanent link">&para;</a></h3>
+<p><strong>Python</strong> is a popular programming language required to run MkDocs. Here is a brief procedure to install Python on your system:</p>
+<ol>
+<li>Go to the official Python website at <a href="https://www.python.org/downloads/">python.org</a>.</li>
+<li>Select the appropriate operating system for your machine. For example, if you are running Windows, choose the Windows installer.</li>
+<li>Click on the <strong>"Download Python"</strong> button of the latest version of Python available.</li>
+<li>Once the download is complete, run the installer and follow the instructions to install Python on your system.</li>
+<li>During the installation process, make sure to select the option to <strong>add Python to your system PATH.</strong> This will allow you to run Python commands from your terminal or console.</li>
+</ol>
+<p>Once the installation is complete, open a terminal or console and type the following command to verify the installation of Python:</p>
+<pre><code>$ python --version
+Python 3.8.2
+</code></pre>
+<h3 id="installing-pip">Installing Pip<a class="headerlink" href="#installing-pip" title="Permanent link">&para;</a></h3>
+<p><strong>Pip</strong> is a package installer for Python, that lets you install third-party libraries and modules. If you are using a recent version of Python, pip is likely to be <strong>pre-installed by default</strong>.</p>
+<p>To upgrade pip to the lasted version:</p>
+<pre><code>pip install --upgrade pip
+</code></pre>
+<p>To verify the upgraded version of Pip, type the following command: :</p>
+<pre><code>pip --version
+</code></pre>
+<p>This command should display the version of Pip installed.</p>
+<hr />
+<h2 id="installation">INSTALLATION<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>To install MkDocs, type the following command in your terminal:</p>
+<pre><code>pip install mkdocs
+</code></pre>
+<p>You should now have the mkdocs command and all its dependencies installed on your local system. To verify the installation, type the following command:</p>
+<pre><code>$ mkdocs --version
+mkdocs, version 1.2.0 from /usr/local/lib/python3.8/site-packages/mkdocs (Python 3.8)
+</code></pre>
+<p>This command should display the version of MkDocs installed in your system.</p>
+<hr />
+<h2 id="getting-started">GETTING STARTED<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>Getting started with MkDocs on your local environment is easy, follow these steps to preview your documentation:</p>
+<h3 id="create-a-new-project">Create a New Project<a class="headerlink" href="#create-a-new-project" title="Permanent link">&para;</a></h3>
+<p>To <strong>create a new project</strong>, open a terminal or console and type the following command:</p>
+<pre><code>mkdocs new my-project
+cd my-project
+</code></pre>
+<p>Review the initial project layout created for you.</p>
+<pre><code>mkdocs.yml   # The configuration file.
+docs/             # The folder that contains your documentation
+    index.md  # The documentation homepage.
+</code></pre>
+<h3 id="starting-the-server">Starting the Server<a class="headerlink" href="#starting-the-server" title="Permanent link">&para;</a></h3>
+<p>To <strong>preview your documentation</strong> as you work on it, MkDocs comes with a built-in dev-server. </p>
+<p>Make sure you are in the same directory as the <strong><code>mkdocs.yml</code></strong> configuration file, and then start the server by running the <code>mkdocs serve</code> command:</p>
+<pre><code>$ mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
+[I 160402 15:50:43 handlers:58] Start watching changes
+[I 160402 15:50:43 handlers:60] Start detecting changes
+</code></pre>
+<p>To see the default MkDocs home page, open up <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> in your browser.</p>
+<p><img alt="screenshot" src="img/screenshot.png" /></p>
+<p>The dev-server also supports <strong>auto-reloading</strong>, which rebuilds your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.</p>
+<h3 id="initial-configuration">Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permanent link">&para;</a></h3>
+<p>MkDocs have <strong>a single</strong> YAML configuration file called <strong><code>mkdocs.yml</code></strong>. The <code>site_name</code> and <code>site_url</code> are the only two required configuration options in your configuration file. </p>
+<p>For <strong>initial editing</strong>, open up and change the <code>site_name</code> setting, for example, to <code>MkDocs</code> and save the file.</p>
+<ul>
+<li><code>site_name: MkDocs</code></li>
+<li><code>site_url: https://example.com/</code></li>
+</ul>
+<p>Your browser should immediately reload, and you'll see your new documentation site name displayed.</p>
+<p><img alt="site_name" src="img/sitename.png" /></p>
+<blockquote>
+<p><strong>Note:</strong>
+When you create a new project, the <code>site_url</code> option value is: <code>https://example.com</code>. 
+If you already known the final location of your website, it is recommended to update the <code>site_url</code> option to point to it.
+Please, be sure that you edit this option before deploying your site to a production server.</p>
+</blockquote>
+<h3 id="preview-the-docs">Preview the Docs<a class="headerlink" href="#preview-the-docs" title="Permanent link">&para;</a></h3>
+<p>Documentation source files are written in <strong>Markdown</strong>, as an example, follow these steps to edit your documentation:</p>
+<ol>
+<li>Open the <strong><code>docs/index.md</code></strong> document in your text editor of choice.</li>
+<li>Change the initial heading to <code># WELCOME TO MkDocs</code>.</li>
+<li>Save your changes.</li>
+</ol>
+<p>Your browser will <strong>auto-reload</strong>, and you should see your updated documentation immediately.</p>
+<hr />
+<h2 id="whats-next">WHAT'S NEXT?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>Once you have <strong>installed and run</strong> MkDocs, you are ready to start editing, preview, and deploy your documentation.</p>
+<p>Now you can simply navigate to your project directory to:</p>
+<ul>
+<li><strong>Open</strong> your Markdown files and make any necessary changes</li>
+<li><strong>Add</strong> more pages</li>
+<li><strong>Build</strong> and preview your changes</li>
+<li><strong>Deploy</strong> your documentation website to a production server.</li>
+</ul>
+<p>From this point, for more complete documentation of all features, see the <strong><a href="https://www.mkdocs.org/">MkDocs User Guide</a>.</strong></p>
+<p>Creating beautiful and professional-looking documentation has never been easier!</p>
+<hr />
+<h2 id="help-commands">HELP COMMANDS<a class="headerlink" href="#help-commands" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs -h</code> - Print help message and exit.</li>
+</ul>
+<hr />
+<h2 id="bibliography-references-and-tools">BIBLIOGRAPHY, REFERENCES, AND TOOLS<a class="headerlink" href="#bibliography-references-and-tools" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.mkdocs.org/">MkDocs</a></li>
+<li><a href="https://learn.microsoft.com/en-us/style-guide/">Microsoft Style Guide</a></li>
+<li><a href="https://developers.google.com/style">Google Developer Documentation Style Guide</a></li>
+<li><a href="https://app.grammarly.com/">grammarly.com</a></li>
+<li><a href="https://hemingwayapp.com/">hemingwayapp.com</a></li>
+<li><a href="https://www.canva.com/">canva.com</a></li>
+<li><a href="https://www.gimp.org/">Gimp</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MkDocs & Fran Martinez &copy;
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

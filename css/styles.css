@@ -73,6 +73,7 @@ h1 {
   text-align: left;
 }
 
+
 h2 {
   font-size: 4.2rem;
   text-align: center;
@@ -169,16 +170,19 @@ img {
 
 .position {
 line-height: 1.4;
+color: var(--steel-grey);
 }
+
 
 .welcome-section > p {
   font-size: 4rem;
   font-weight: 400;
   font-style: normal;
+  margin-left: 3px;
 }
 
 #welcome-section input[type='button'] {
-  background-color: var(--steel-blue-500);
+  background-color: mediumblue;
   color: var(--steel-blue-50);
   font-size: 3rem;
   font-weight: 600;

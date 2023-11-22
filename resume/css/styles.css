@@ -76,7 +76,6 @@ h1 {
   line-height: 1.1;
 }
 
-
 h2 {
   font-size: 4rem;
   text-align: center;
@@ -453,7 +452,7 @@ footer i {
 /* button */
 
 #about a {
-  background-color: var(--steel-blue-500);
+  background-color: mediumblue;
   color: var(--steel-blue-50);
   font-size: 3rem;
   font-weight: 600;

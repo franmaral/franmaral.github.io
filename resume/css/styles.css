@@ -18,19 +18,19 @@
 
 /* Custom properties/variables  */
 :root {
-  --steel-blue-50: #f1f9fe;
-  --steel-blue-100: #e1f3fd;
-  --steel-blue-200: #bde7fa;
-  --steel-blue-300: #82d5f7;
-  --steel-blue-400: #40c1f0;
-  --steel-blue-500: #17aae0;
-  --steel-blue-600: #0a87bd;
-  --steel-blue-700: #096d9b;
-  --steel-blue-800: #0c5b80;
-  --steel-blue-900: #104c6a;
-  --steel-blue-950: #0b3046;
-  --steel-grey: #dfdfdf;
-  --steel-grey-2: #adadad;
+  --steel-blue-50: #f0f1fd;
+  --steel-blue-100: #e3e5fc;
+  --steel-blue-200: #cccef9;
+  --steel-blue-300: #aeb0f3;
+  --steel-blue-400: #928dec;
+  --steel-blue-500: #8071e3;
+  --steel-blue-600: #6b50d4;
+  --steel-blue-700: #6046bc;
+  --steel-blue-800: #4f3b98;
+  --steel-blue-900: #433679;
+  --steel-blue-950: #282046;
+  --steel-grey: #f5f6fa;
+  --steel-grey-2: #5c5962;
   --steel-black: #181719;
 }
 
@@ -57,37 +57,37 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
+  font-size: 1.7rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
-  color: var(--steel-blue-50);
+  color: black;
 }
 
 h1,
 h2
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
 }
 
 h1 {
   font-size: 8rem;
   text-align: left;
   line-height: 1.1;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  color: var(--steel-blue-500);
+  /*color: var(--steel-blue-800);*/
   padding: 10px 0 25px 0;
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   text-align: left;
-  color: var(--steel-blue-400);
-  margin: 10px 0 20px 0;
+  /*color: var(--steel-blue-400);*/
+  margin: 10px 0 10px 0;
   border-bottom: 2px solid var(--steel-blue-400);
 }
 
@@ -97,7 +97,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--steel-blue-50);
+  color: var(--steel-blue-500);
 }
 
 img {
@@ -124,7 +124,7 @@ header {
 }
 
 .css-fm-text {
-  color: var(--steel-blue-300);
+  color: var(--steel-blue-800);
 }
 
 /* nav */
@@ -136,9 +136,9 @@ header {
   left: 0px;
   width: 250px;
   height: 100%;
-  background-color: var(--steel-blue-950);
+  background-color: var(--steel-grey);
   border-right: solid;
-  border-color: var(--steel-blue-950);
+  border-color: var(--steel-blue-50);
 }
 
 #navbar ul {
@@ -157,7 +157,7 @@ header {
 }
 
 #navbar li:hover {
-  background-color: var(--steel-blue-500);
+  background-color: var(--steel-blue-200);
 }
 
 ::-webkit-scrollbar {
@@ -165,25 +165,25 @@ header {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--steel-blue-950);
+  background-color: var(--steel-blue-50);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--steel-blue-500);
+  background-color: var(--steel-blue-200);
 }
 
 ::-webkit-scrollbar-button {
-  background-color: var(--steel-blue-950);
+  background-color: var(--steel-blue-50);
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: var(--steel-blue-950);
+  background-color: var(--steel-blue-50);
 }
 
 #navbar a {
   display: block;
   padding: 20px 20px;
-  color: var(--steel-blue-100);
+  color: var(--steel-blue-500);
   cursor: pointer;
   text-decoration: none;
 }
@@ -193,7 +193,7 @@ header {
   padding-top: 15px;
   font-size: 3rem;
   font-weight: 600;
-  color: var(--steel-blue-600)
+  color: var(--steel-blue-600);
 }
 
 /* General section */
@@ -224,7 +224,7 @@ section {
 /* about section */
 
 .about {
-  background-image: linear-gradient(180deg, var(--steel-black) 0%, var(--steel-black) 100%);
+  background-image: linear-gradient(180deg, white 0%, white 100%);
 }
 
 .about-print {
@@ -240,12 +240,12 @@ section {
 .iticons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem 6rem;
+  padding: 2rem 2rem 2rem 8rem;
 }
 
 .p-1 {
@@ -259,21 +259,31 @@ section {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-top: 4rem;
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: var(--steel-grey-2);
+  margin-top: 2rem;
   flex-wrap: nowrap;
 
 }
 
 .abskills {
-  margin: 0 0 0 2rem;
-  color: var(--steel-blue-300);
+  margin: 0 0 0 5rem;
+  color: var(--steel-blue-500);
   width: 50em;
+  font-size: 2rem;
+}
+
+.abskills-detail {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 0.5;
 }
 
 /* Contact section */
 
 .contact {
-  background-image: linear-gradient(180deg, var(--steel-black) 0%, var(--steel-blue-950) 100%);
+  background-image: linear-gradient(180deg, white 0%, white 100%);
 }
 
 .contact-links {
@@ -288,8 +298,10 @@ section {
 
 .contact-details {
   font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  text-shadow: 1px 1px 1px var(--steel-grey-2);
   transition: transform 0.3s ease-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin: 0.5em;
 }
 
 .contact-details:hover {
@@ -326,11 +338,11 @@ section {
 /* experience section */
 
 .experience {
-  background-image: linear-gradient(180deg, var(--steel-blue-950) 0%, var(--steel-blue-950) 100%);
+  background-image: linear-gradient(180deg, white 0%, white 100%);
 }
 
 .job {
-  padding: 4rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .job:first-of-type {
@@ -338,39 +350,40 @@ section {
 }
 
 .company {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  color: var(--steel-grey);
+  color: var(--steel-blue-900);
 }
 
 .position-expert {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--steel-grey-2);
 }
 
 .role {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  color: var(--steel-blue-300);
+  color: var(--steel-blue-500);
 }
 
 .calendar {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
-  color: var(--steel-blue-200);
+  color: var(--steel-blue-400);
+  padding: 0 0 3rem 0;
 }
 
 /* education section */
 
 .education {
-  background-image: linear-gradient(180deg, var(--steel-blue-950) 100%, var(--steel-blue-950) 100%);
+  background-image: linear-gradient(180deg, white 100%, white 100%);
 }
 
 /* languages section */
 
 .languages {
-  background-image: linear-gradient(180deg, var(--steel-blue-950) 100%, var(--steel-blue-950) 50%);
+  background-image: linear-gradient(180deg, white 0%, white 100%);
 }
 
 .course {
@@ -380,13 +393,13 @@ section {
 .title {
   font-size: 2rem;
   font-weight: 400;
-  color: var(--steel-blue-200);
+  color: var(--steel-blue-900);
 }
 
 .courseinfo {
   font-size: 2rem;
   font-weight: 200;
-  color: var(--steel-blue-300);
+  color: var(--steel-blue-800);
 }
 
 .completion {
@@ -413,13 +426,13 @@ section {
 /* courses section */
 
 .courses {
-  background-image: linear-gradient(180deg, var(--steel-blue-950) 50%, var(--steel-black) 100%);
+  background-image: linear-gradient(180deg, white 50%, white 100%);
 }
 
 /* main-interests */
 
 .main-interests {
-  background-image: linear-gradient(180deg, var(--steel-black) 100%, var(--steel-black) 100%);
+  background-image: linear-gradient(180deg, white 100%, white 100%);
   height: auto;
 }
 
@@ -436,12 +449,13 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  background: var(--steel-blue-950);
-  border-top: 4px solid var(--steel-blue-800);
+  background: var(--steel-blue-200);
+  border-top: 4px solid var(--steel-blue-300);
 }
 
 footer > p {
-  margin: 2rem;
+  margin: 2.5rem;
+  font-weight: 500;
 }
 
 footer i {
@@ -452,16 +466,16 @@ footer i {
 /* button */
 
 #about a {
-  background-color: mediumblue;
+  background-color: var(--steel-blue-700);
   color: var(--steel-blue-50);
-  font-size: 3rem;
-  font-weight: 600;
-  max-width: 300px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  max-width: 250px;
   width: 100%;
   height: 1.8em;
   margin: 20px 0 0 0;
   border: 0;
-  border-radius: 2px;
+  border-radius: 6px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -480,7 +494,7 @@ footer i {
 .myskills {
   line-height: 2;
   padding: 50px 10% 10px 290px;
-  background-image: linear-gradient(0deg, var(--steel-black) 0%, var(--steel-black) 100%);
+  background-image: linear-gradient(0deg, white 0%, white 100%);
 }
 
 .skills {
@@ -518,20 +532,20 @@ footer i {
 .titleskills {
   font-size: 1.3em;
   font-weight: 500;
-  color: var(--steel-blue-100);
+  color: var(--steel-blue-700);
 }
 
 #skills p {
   font-size: 0.8em;
   font-weight: 300;
-  color: var(--steel-blue-50);
+  color: var(--steel-blue-500);
 }
 
 .progress-bar-text {
-  margin-left: 8px;
+  margin: 2px 0 0 8px;
   font-size: 0.8em;
-  font-weight: bold;
-  color: var(--steel-blue-950);
+  font-weight: 500;
+  color: var(--steel-blue-50);
 }
 
 
@@ -673,7 +687,14 @@ footer i {
 
   .abskills {
     width: auto;
-    margin: 5rem 0 0 0;
+    margin: 2rem 0 2rem 0;
+    color: var(--steel-blue-500);
+  }
+
+  .abskills-detail {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 0.5;
   }
 
   /* button */
@@ -682,7 +703,7 @@ footer i {
     font-size: 3rem;
     font-weight: 600;
     height: 60px;
-    padding: 15px 0 0 0;
+    padding: 10px 0 0 0;
   }
 
   /* Contact section */
@@ -755,20 +776,20 @@ footer i {
 @media print {
 
   :root {
-  --steel-blue-50: #f1f9fe;
-  --steel-blue-100: #e1f3fd;
-  --steel-blue-200: #bde7fa;
-  --steel-blue-300: #82d5f7;
-  --steel-blue-400: #40c1f0;
-  --steel-blue-500: #17aae0;
-  --steel-blue-600: #0a87bd;
-  --steel-blue-700: #096d9b;
-  --steel-blue-800: #0c5b80;
-  --steel-blue-900: #104c6a;
-  --steel-blue-950: #0b3046;
-  --steel-grey: #767676;
-  --steel-grey-2: #454545;
-  --steel-black: #181719;
+    --steel-blue-50: #f0f1fd;
+    --steel-blue-100: #e3e5fc;
+    --steel-blue-200: #cccef9;
+    --steel-blue-300: #aeb0f3;
+    --steel-blue-400: #928dec;
+    --steel-blue-500: #8071e3;
+    --steel-blue-600: #6b50d4;
+    --steel-blue-700: #6046bc;
+    --steel-blue-800: #4f3b98;
+    --steel-blue-900: #433679;
+    --steel-blue-950: #282046;
+    --steel-grey: #f5f6fa;
+    --steel-grey-2: #5c5962;
+    --steel-black: #181719;
   }
 
 
@@ -780,7 +801,7 @@ footer i {
 
   body {
     font-family: 'Lato', 'Poppins', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
     overflow: auto;
   } 
   
@@ -789,23 +810,27 @@ footer i {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 4.2rem;
     margin-top: 15px;
   }
 
   h1 span {
-    font-size: 5.5rem;
+    font-size: 4.2rem;
+  }
+
+  .introduce {
+    width: 700px;
   }
 
   h2 {
-    font-size: 2.6rem;
-    padding: 4px 0;
+    font-size: 2.2rem;
+    padding: 4px 0 4px 0;
     color: var(--steel-blue-800);
   }
 
   h3 {
-    font-size: 2rem;
-    margin: 0 0;
+    font-size: 1.8rem;
+    margin: 10px 0 10px 0;
     color: var(--steel-blue-700);
   }
 
@@ -835,7 +860,7 @@ footer i {
   /* Sections */
 
   .about {
-    background-image: linear-gradient(180deg, var(--steel-black) 0%, var(--steel-blue-950) 100%);
+    background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
   .about-print {
@@ -849,12 +874,12 @@ footer i {
 
   .iticons {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 4rem 6rem 2rem 12rem;
+    padding: 4rem 3rem 2rem 4rem;
   }
 
   .p-1 {
@@ -876,22 +901,25 @@ footer i {
     justify-content: space-around;
     font-weight: 400;
     margin-top: 0;
+    font-size: 1.6rem;
   }
 
   .abskills {
-    width: 50em;
-    margin: 0 0 0 9rem;
+    max-width: 200px;
+    margin: 0 0 0 3rem;
+    font-size: 1.6rem;
+    color: var(--steel-blue-700);
   }
   
   /* Contact section */
 
   .contact {
     height: auto;
-    background-image: linear-gradient(180deg, var(--steel-blue-950) 0%, var(--steel-blue-950) 100%);
+    background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
   #contact h2 {
-    color: var(--steel-blue-300)
+    color: var(--steel-blue-800)
   }
 
   #contact {
@@ -905,12 +933,12 @@ footer i {
 
   .contact-links {
     flex-direction: row;
-    margin: 1rem 0 0.5rem 0;
+    margin: 0 0 0 0;
     max-width: 980px;
   }
 
   .contact-details {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-shadow: 0 0 0 #1f1f1f;
   }
 
@@ -938,7 +966,7 @@ footer i {
   }
   
   .block-print-one {
-    width: 65vw;
+    width: 55vw;
     height: auto;
     z-index: 1;
   }
@@ -952,7 +980,7 @@ footer i {
   /* experience section */
 
   .experience {
-    padding: 10px 0 0 35px;
+    padding: 10px 0 0 38px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
@@ -995,14 +1023,14 @@ footer i {
 /* education section */
 
   .education {
-    padding: 0 0 0 35px;
+    padding: 15px 0 0 38px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
   /* languages section */
 
   .languages {
-    padding: 0 0 0 35px;
+    padding: 15px 0 0 38px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
@@ -1010,7 +1038,7 @@ footer i {
   /* courses section */
 
   .courses {
-    background-image: linear-gradient(90deg, var(--steel-blue-100) 0%, white 100%);
+    background-image: linear-gradient(90deg, white 0%, white 100%);
   }
 
   #courses > h2 {
@@ -1018,7 +1046,7 @@ footer i {
   }
 
   .course {
-    padding: 0 0 0.8rem 0;
+    padding: 0 0 3px 0;
   }
 
   .title {
@@ -1037,12 +1065,19 @@ footer i {
     font-size: 1.5rem;
     font-weight: 500;
     padding: 0 5px 0 5px;
+    border: 1px solid var(--steel-blue-300);
+    background-color: var(--steel-blue-300);
+    border-radius: 7px;
   }
   
   .pending {
     font-size: 1.5rem;
     font-weight: 500;
     padding: 0 5px 0 5px;
+    border: 1px solid var(--steel-blue-200);
+    background-color: var(--steel-blue-200);
+    border-radius: 7px;
+    
   }
 
   /* skills */
@@ -1103,28 +1138,29 @@ footer i {
 
   .main-interests {
     padding-top: 5px;
-    background-image: linear-gradient(180deg, var(--steel-blue-200) 0%, var(--steel-blue-200) 100%);
+    background-image: linear-gradient(180deg, white 0%, white 100%);
     color: white;
   }
 
   .main-interests > p:first-of-type {
-    padding-top: 10px;
+    padding-top: 25px;
   }
 
   .main-interests > p:last-of-type {
-    padding-bottom: 5px;
+    padding-bottom: 52px;
   }
 
   .main-interests > p {
-    padding-left: 30px;
+    padding: 0 0 0 30px;
   }
 
   footer {
-    background: var(--steel-blue-900);
-    border-top: 0 solid var(--steel-blue-300);
-    border-bottom: 3px solid var(--steel-blue-900);
+    color: var(--steel-blue-700);
+    background: var(--steel-grey);
+    border-top: 0 solid var(--steel-grey);
+    border-bottom: 3px solid var(--steel-blue-500);
     font-size: 1.5em;
     font-weight: 400;
-    padding: 2.5rem 2rem 3.6rem 1rem;
+    padding: 25px 2rem 3.6rem 1rem;
   }
 } 

@@ -182,7 +182,7 @@ color: var(--steel-grey);
 }
 
 #welcome-section input[type='button'] {
-  background-color: mediumblue;
+  background-color: var(--steel-blue-500);
   color: var(--steel-blue-50);
   font-size: 3rem;
   font-weight: 600;

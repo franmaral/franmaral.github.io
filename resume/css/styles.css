@@ -80,13 +80,14 @@ h2 {
   font-size: 3rem;
   text-align: center;
   /*color: var(--steel-blue-800);*/
-  padding: 10px 0 25px 0;
+  padding: 12px 0 25px 0;
 }
 
 h3 {
   font-size: 2rem;
+  font-weight: 400;
   text-align: left;
-  /*color: var(--steel-blue-400);*/
+  color: var(--steel-blue-700);
   margin: 10px 0 10px 0;
   border-bottom: 2px solid var(--steel-blue-400);
 }
@@ -245,7 +246,7 @@ section {
   text-align: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem 2rem 2rem 8rem;
+  padding: 2rem 14rem 2rem 8rem;
 }
 
 .p-1 {
@@ -269,7 +270,7 @@ section {
 
 .abskills {
   margin: 0 0 0 5rem;
-  color: var(--steel-blue-500);
+  color: var(--steel-blue-900);
   width: 50em;
   font-size: 2rem;
 }
@@ -356,7 +357,7 @@ section {
 }
 
 .position-expert {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--steel-grey-2);
 }
@@ -364,13 +365,12 @@ section {
 .role {
   font-size: 1.8rem;
   font-weight: 400;
-  color: var(--steel-blue-500);
 }
 
 .calendar {
   font-size: 1.2rem;
   font-weight: 300;
-  color: var(--steel-blue-400);
+  color: var(--steel-blue-800);
   padding: 0 0 3rem 0;
 }
 
@@ -466,7 +466,7 @@ footer i {
 /* button */
 
 #about a {
-  background-color: var(--steel-blue-700);
+  background-color: var(--steel-blue-600);
   color: var(--steel-blue-50);
   font-size: 2.5rem;
   font-weight: 500;
@@ -531,8 +531,8 @@ footer i {
 
 .titleskills {
   font-size: 1.3em;
-  font-weight: 500;
-  color: var(--steel-blue-700);
+  font-weight: 400;
+  color: var(--steel-black);
 }
 
 #skills p {
@@ -597,6 +597,7 @@ footer i {
 
   .iticons {
     padding: 3rem 0;
+    justify-content: flex-end;
   }
 
   .skills {
@@ -672,8 +673,13 @@ footer i {
   /* Sections */
 
   .position {
-    color: var(--steel-blue-400);
+    color: var(--steel-blue-600);
     font-size: 3.5rem;
+  }
+
+  .iticons {
+    padding: 3rem 0;
+    justify-content: flex-start;
   }
 
   .about {
@@ -682,13 +688,14 @@ footer i {
 
   .about-skills {
     flex-direction: column;
-    font-weight: 400;
+    font-size: 2.3rem;
+    font-weight: 300;
   }
 
   .abskills {
     width: auto;
     margin: 2rem 0 2rem 0;
-    color: var(--steel-blue-500);
+    color: var(--steel-blue-900);
   }
 
   .abskills-detail {
@@ -714,6 +721,7 @@ footer i {
 
   .contact-details {
     font-size: 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12), 0 5px 12px rgba(0, 0, 0, 0.08);
   }
   .contact-links {
     flex-direction: column;
@@ -722,19 +730,24 @@ footer i {
   .experience {
   }
 
+  .calendar {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
   .education {
   }
 
   .title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 400;
-    color: var(--steel-blue-200);
+    color: var(--steel-blue-950);
   }
   
   .courseinfo {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 300;
-    color: var(--steel-blue-50);
+    color: var(--steel-black);
   }
 
   .languages {
@@ -824,14 +837,14 @@ footer i {
 
   h2 {
     font-size: 2.2rem;
-    padding: 4px 0 4px 0;
-    color: var(--steel-blue-800);
+    padding: 10px 0 0px 0;
+    color: var(--steel-black);
   }
 
   h3 {
     font-size: 1.8rem;
     margin: 10px 0 10px 0;
-    color: var(--steel-blue-700);
+    color: var(--steel-blue-800);
   }
 
   #navbar {
@@ -840,7 +853,7 @@ footer i {
   }
 
   .position {
-    color: var(--steel-blue-400);
+    color: var(--steel-blue-500);
     font-size: 3.4rem;
   }
 
@@ -879,7 +892,7 @@ footer i {
     text-align: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 4rem 3rem 2rem 4rem;
+    padding: 4rem 8rem 2rem 2rem;
   }
 
   .p-1 {
@@ -908,7 +921,7 @@ footer i {
     max-width: 200px;
     margin: 0 0 0 3rem;
     font-size: 1.6rem;
-    color: var(--steel-blue-700);
+    color: var(--steel-black);
   }
   
   /* Contact section */
@@ -919,7 +932,7 @@ footer i {
   }
 
   #contact h2 {
-    color: var(--steel-blue-800)
+    color: var(--steel-black)
   }
 
   #contact {
@@ -978,6 +991,11 @@ footer i {
   }
 
   /* experience section */
+  /* 
+  .experience > p, .education > p, .languages > p {
+    padding: 0 0 0 5px;
+  }
+  */
 
   .experience {
     padding: 10px 0 0 38px;
@@ -985,7 +1003,7 @@ footer i {
   }
 
   .job {
-    padding: 0.8rem 0 0 0;
+    padding: 0.9rem 0 0 0;
   }
 
   .company {
@@ -995,14 +1013,13 @@ footer i {
   }
 
   .position-expert {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 
   .role {
     font-size: 1.4rem;
     font-weight: 400;
-    color: var(--steel-blue-800);
   }
 
   .calendar {
@@ -1012,7 +1029,7 @@ footer i {
   }
 
   .fa {
-    color: var(--steel-blue-300);
+    color: var(--steel-blue-600);
   }
 
   .fa-mobile, .fa-map-marker {
@@ -1042,11 +1059,11 @@ footer i {
   }
 
   #courses > h2 {
-    padding: 10px 0 5px 0;
+    padding: 18px 0 0 0;
   }
 
   .course {
-    padding: 0 0 3px 0;
+    padding: 0 0 4px 0;
   }
 
   .title {
@@ -1058,7 +1075,7 @@ footer i {
   .courseinfo {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--steel-blue-800);
+    color: var(--steel-black);
   }
 
   .completion {
@@ -1088,7 +1105,7 @@ footer i {
   }
 
   .progress-block > p {
-    color: var(--steel-blue-800);
+    color: var(--steel-blue-700);
   }
 
   .skills {
@@ -1100,15 +1117,16 @@ footer i {
   .progress {
     height: 15px;
     width: 180px;
-    border: 1px solid var(--steel-blue-700);
+    border: 1px solid var(--steel-blue-600);
     background-color: #e6f3fa;
     border-radius: 7px;
     margin-bottom: 10px;
   }
 
   .progress-bar {
-    background: var(--steel-blue-500);
+    background: var(--steel-blue-400);
     border-radius: 6px;
+    border: 1px solid var(--steel-blue-400);
   }
 
   .titlemargin {
@@ -1118,7 +1136,7 @@ footer i {
   .titleskills {
     font-size: 1.4em;
     font-weight: 600;
-    color: var(--steel-blue-700);
+    color: var(--steel-black);
   }
   
   #skills p {
@@ -1137,7 +1155,7 @@ footer i {
   /* main-interests */
 
   .main-interests {
-    padding-top: 5px;
+    padding-top: 15px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
     color: white;
   }
@@ -1147,11 +1165,11 @@ footer i {
   }
 
   .main-interests > p:last-of-type {
-    padding-bottom: 52px;
+    padding-bottom: 40px;
   }
 
   .main-interests > p {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 5px;
   }
 
   footer {

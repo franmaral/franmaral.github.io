@@ -18,18 +18,20 @@
 
 /* Custom properties/variables  */
 :root {
-  --steel-blue-50: #f1f9fe;
-  --steel-blue-100: #e1f3fd;
-  --steel-blue-200: #bde7fa;
-  --steel-blue-300: #82d5f7;
-  --steel-blue-400: #40c1f0;
-  --steel-blue-500: #17aae0;
-  --steel-blue-600: #0a87bd;
-  --steel-blue-700: #096d9b;
-  --steel-blue-800: #0c5b80;
-  --steel-blue-900: #104c6a;
-  --steel-blue-950: #0b3046;
-  --steel-grey: #dfdfdf;
+  --steel-blue-50: #f0f1fd;
+  --steel-blue-100: #e3e5fc;
+  --steel-blue-200: #cccef9;
+  --steel-blue-300: #aeb0f3;
+  --steel-blue-400: #928dec;
+  --steel-blue-500: #8071e3;
+  --steel-blue-600: #6b50d4;
+  --steel-blue-700: #6046bc;
+  --steel-blue-800: #4f3b98;
+  --steel-blue-900: #433679;
+  --steel-blue-950: #282046;
+  --steel-grey: #f5f6fa;
+  --steel-grey-2: #5c5962;
+  --steel-black: #181719;
 }
 
 /* Base reset */
@@ -182,7 +184,7 @@ color: var(--steel-grey);
 }
 
 #welcome-section input[type='button'] {
-  background-color: var(--steel-blue-500);
+  background-color: var(--steel-blue-400);
   color: var(--steel-blue-50);
   font-size: 3rem;
   font-weight: 600;

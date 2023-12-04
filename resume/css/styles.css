@@ -370,8 +370,12 @@ section {
 .calendar {
   font-size: 1.2rem;
   font-weight: 300;
-  color: var(--steel-blue-800);
+  color: var(--steel-blue-600);
   padding: 0 0 3rem 0;
+}
+
+.fa-calendar, .fa-globe {
+  color: var(--steel-blue-600) !important;
 }
 
 /* education section */
@@ -733,6 +737,11 @@ footer i {
   .calendar {
     font-size: 1.4rem;
     font-weight: 400;
+    color: var(--steel-blue-800) !important;
+  }
+
+  .fa-calendar, .fa-globe {
+    color: var(--steel-blue-800) !important;
   }
 
   .education {
@@ -836,15 +845,18 @@ footer i {
   }
 
   h2 {
-    font-size: 2.2rem;
-    padding: 10px 0 0px 0;
+    font-size: 2.5rem;
+    padding: 5px 0 9px 0;
+    font-weight: 200;
     color: var(--steel-black);
   }
 
   h3 {
     font-size: 1.8rem;
-    margin: 10px 0 10px 0;
-    color: var(--steel-blue-800);
+    margin: 9px 0 10px 0;
+    font-weight: 400;
+    color: var(--steel-blue-900);
+    border-bottom: 1px solid var(--steel-blue-200);
   }
 
   #navbar {
@@ -1025,7 +1037,11 @@ footer i {
   .calendar {
     font-size: 1.3rem;
     font-weight: 400;
-    color: var(--steel-blue-700);
+    color: var(--steel-blue-500) !important;
+  }
+
+  .fa-calendar, .fa-globe {
+    color: var(--steel-blue-500) !important;
   }
 
   .fa {
@@ -1033,24 +1049,28 @@ footer i {
   }
 
   .fa-mobile, .fa-map-marker {
-    color: var(--steel-blue-50);
+    color: var(--steel-blue-600);
   }
 
 
 /* education section */
 
   .education {
-    padding: 15px 0 0 38px;
+    padding: 12px 0 0 38px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
   }
 
   /* languages section */
 
   .languages {
-    padding: 15px 0 0 38px;
+    padding: 12px 0 0 38px;
     background-image: linear-gradient(180deg, white 0%, white 100%);
+
   }
 
+  .languages > p {
+    line-height: 1;
+  }
 
   /* courses section */
 
@@ -1059,11 +1079,11 @@ footer i {
   }
 
   #courses > h2 {
-    padding: 18px 0 0 0;
+    padding: 13px 0 4px 0;
   }
 
   .course {
-    padding: 0 0 4px 0;
+    padding: 0 0 10px 0;
   }
 
   .title {
@@ -1074,25 +1094,25 @@ footer i {
 
   .courseinfo {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--steel-black);
   }
 
   .completion {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 400;
     padding: 0 5px 0 5px;
-    border: 1px solid var(--steel-blue-300);
-    background-color: var(--steel-blue-300);
+    border: 1px solid var(--steel-blue-200);
+    background-color: var(--steel-blue-200);
     border-radius: 7px;
   }
   
   .pending {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 400;
     padding: 0 5px 0 5px;
-    border: 1px solid var(--steel-blue-200);
-    background-color: var(--steel-blue-200);
+    border: 1px solid var(--steel-blue-100);
+    background-color: var(--steel-blue-100);
     border-radius: 7px;
     
   }
@@ -1160,12 +1180,16 @@ footer i {
     color: white;
   }
 
+  #achievements > h2 {
+    padding: 15px 0 0px 0;
+  }
+
   .main-interests > p:first-of-type {
     padding-top: 25px;
   }
 
   .main-interests > p:last-of-type {
-    padding-bottom: 40px;
+    padding-bottom: 56px;
   }
 
   .main-interests > p {
@@ -1176,7 +1200,7 @@ footer i {
     color: var(--steel-blue-700);
     background: var(--steel-grey);
     border-top: 0 solid var(--steel-grey);
-    border-bottom: 3px solid var(--steel-blue-500);
+    border-bottom: 3px solid var(--steel-blue-300);
     font-size: 1.5em;
     font-weight: 400;
     padding: 25px 2rem 3.6rem 1rem;

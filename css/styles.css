@@ -98,6 +98,15 @@ a {
   color: var(--steel-blue-50);
 }
 
+.linktext {
+  color: var(--steel-blue-300);
+}
+
+.linktext:hover {
+  color: var(--steel-blue-100);
+  transition: color 0.3s ease-out;
+}
+
 img {
   display: block;
   width: 100%;
@@ -215,6 +224,34 @@ color: var(--steel-grey);
   color: var(--steel-grey);
 }
 
+/* Button */
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--steel-blue-900);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--steel-blue-600);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
 /* About me */
 
 .about-me {
@@ -226,7 +263,7 @@ color: var(--steel-grey);
   height: auto;
   padding: 100px 10% 10px 10%;
   background-color: #000;
-  background-image: linear-gradient(0deg, var(--steel-blue-700) 0%, var(--steel-blue-950) 100%);
+  background-image: linear-gradient(0deg, var(--steel-blue-800) 0%, var(--steel-blue-950) 100%);
 }
 
 .about-me > p {
@@ -241,10 +278,78 @@ color: var(--steel-grey);
   color: var(--steel-grey);
 }
 
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 100px 2rem 0 2rem;
+  background-image: linear-gradient(0deg, var(--steel-blue-950) 0%, var(--steel-blue-800) 100%);
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--steel-blue-50);
+}
+
+.projects-section > p:first-of-type {
+  padding: 0 1em 3em 1em;
+}
+
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 6rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  background: var(--steel-blue-700);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.project:hover {
+  background: var(--steel-blue-500);
+  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.code {
+  color: var(--steel-blue-900);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: var(--steel-blue-300);
+}
+
+.project-tile {
+  width: 18em;
+  height: 18em;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  display: block;
+  margin:  5px auto 0 auto;
+  width: 98%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
 .myskills {
   line-height: 2;
   padding: 70px 10% 10px 10%;
-  background-image: linear-gradient(0deg, var(--steel-blue-950) 0%, var(--steel-blue-700) 100%);
+  background-image: linear-gradient(0deg, var(--steel-black) 0%, var(--steel-blue-950) 100%);
 }
 
 .skills {
@@ -256,6 +361,8 @@ color: var(--steel-grey);
   width: 100%;
   height: 130vh;
 }
+
+/* Skills section */
 
 .progress {
   height: 20px;
@@ -298,92 +405,6 @@ color: var(--steel-grey);
   color: var(--steel-blue-950);
 }
 
-
-/* Projects section */
-
-.projects-section {
-  text-align: center;
-  padding: 100px 2rem 0 2rem;
-  background-image: linear-gradient(0deg, var(--steel-blue-700) 0%, var(--steel-blue-950) 100%);
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--steel-blue-50);
-}
-
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 6rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-.project {
-  background: var(--steel-blue-900);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.project:hover {
-  background: var(--steel-blue-700);
-  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.5);
-}
-
-.code {
-  color: var(--steel-blue-900);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: var(--steel-blue-300);
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  display: block;
-  margin:  5px auto 0 auto;
-  width: 98%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--steel-blue-900);
-  transition: background 0.3s ease-out;
-}
-
-.btn-show-all:hover {
-  background: var(--steel-blue-600);
-}
-
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
 /* Contact section */
 
 .contact-section {
@@ -395,7 +416,7 @@ color: var(--steel-grey);
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: var(--steel-blue-900);
+  background: var(--steel-black);
 }
 
 .contact-section-header > h2 {
@@ -513,6 +534,7 @@ footer i {
   .welcome-section {
     height: auto;
     padding: 80px 10% 10px 10%;
+    background-image: linear-gradient(180deg, #181719 0%, var(--steel-blue-950) 100%);
   }
 
   .creative {
@@ -522,6 +544,36 @@ footer i {
   .about-me {
     font-size: 2.8rem;
     height: auto;
+    background-image: linear-gradient(0deg, var(--steel-blue-800) 0%, var(--steel-blue-950) 100%);
+  }
+
+  .projects-section-header {
+    font-size: 4rem;
+  }
+
+  .projects-section > p:first-of-type {
+    text-align: left;
+  }
+
+  .projects-section {
+    padding: 6rem 1rem;
+    height: auto;
+    background-image: linear-gradient(0deg, var(--steel-blue-950) 0%, var(--steel-blue-800) 100%);
+  }
+
+  .projects-grid {
+    grid-template-columns: 0.75fr;
+    height: auto;
+    justify-content: center;
+  }
+
+  .project-tile {
+    width: 10em;
+    height: 10em;
+  }
+
+  .myskills {
+    background-image: linear-gradient(0deg, var(--steel-black) 0%, var(--steel-blue-950) 100%);
   }
 
   .skills {
@@ -542,19 +594,8 @@ footer i {
     font-size: 0.7em;
   }
 
-  .projects-section-header {
-    font-size: 4rem;
-  }
-
-  .projects-section {
-    padding: 6rem 1rem;
-    height: auto;
-  }
-
-  .projects-grid {
-    grid-template-columns: 0.75fr;
-    height: auto;
-    justify-content: center;
+  .contact-section {
+    background: var(--steel-black);
   }
 
   .contact-section-header > h2 {

@@ -588,7 +588,7 @@ footer i {
 
   body {
     font-size: 2em;
-    overflow: auto;
+    /*overflow: auto;*/
   } 
   
   h1 {

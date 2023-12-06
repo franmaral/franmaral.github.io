@@ -1053,28 +1053,33 @@ footer i {
 
   .job {
     padding: 0.9rem 0 0 0;
+    white-space: nowrap;
   }
 
   .company {
     font-size: 2rem;
     font-weight: 500;
     color: var(--steel-blue-950);
+    white-space: nowrap;
   }
 
   .position-expert {
     font-size: 2rem;
     font-weight: 400;
+    white-space: nowrap;
   }
 
   .role {
     font-size: 1.4rem;
     font-weight: 400;
+    white-space: nowrap;
   }
 
   .calendar {
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--steel-blue-500) !important;
+    white-space: nowrap;
   }
 
   .fa-calendar, .fa-globe {
@@ -1127,12 +1132,14 @@ footer i {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--steel-blue-950);
+    white-space: nowrap;
   }
 
   .courseinfo {
     font-size: 1.5rem;
     font-weight: 300;
     color: var(--steel-black);
+    white-space: nowrap;
   }
 
   .completion {

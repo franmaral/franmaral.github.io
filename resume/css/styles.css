@@ -361,7 +361,7 @@ section {
 }
 
 .position-expert {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 600;
   color: var(--steel-grey-2);
   white-space: nowrap;
@@ -650,9 +650,13 @@ footer i {
   h3 {
     font-size: 3rem;
     margin: 9px 0 10px 0;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--steel-blue-900);
-    border-bottom: 0px solid var(--steel-blue-200);
+    border-bottom: 1px solid var(--steel-blue-200);
+  }
+
+  .whitespace {
+    white-space: nowrap;
   }
 
   header {
@@ -762,11 +766,12 @@ footer i {
     max-width: 280px;
   }
 
-  .experience {
+  .experience h3 {
+    padding-bottom: 0;
   }
 
   .job {
-    padding: 3rem 0 0 0;
+    padding: 2.5rem 0 0 0;
     white-space: nowrap;
   }
 
@@ -775,6 +780,11 @@ footer i {
   .job .linebreak {
     font-size: 0;
     display: block;
+  }
+
+  .company {
+    font-size: 3rem;
+    font-weight: 500;
   }
 
   .calendar {
@@ -791,14 +801,14 @@ footer i {
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 300;
     color: var(--steel-blue-950);
   }
   
   .courseinfo {
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 2.2rem;
+    font-weight: 300;
     color: var(--steel-black);
   }
 

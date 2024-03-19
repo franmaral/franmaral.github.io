@@ -1091,19 +1091,19 @@ footer i {
   .calendar {
     font-size: 1.3rem;
     font-weight: 400;
-    color: var(--steel-blue-500) !important;
+    color: var(--steel-blue-800) !important;
   }
 
   .fa-calendar, .fa-globe {
-    color: var(--steel-blue-500) !important;
+    color: var(--steel-blue-800) !important;
   }
 
   .fa {
-    color: var(--steel-blue-600);
+    color: var(--steel-blue-700);
   }
 
   .fa-mobile, .fa-map-marker {
-    color: var(--steel-blue-600);
+    color: var(--steel-blue-700);
   }
 
 
@@ -1156,8 +1156,8 @@ footer i {
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 5px 0 5px;
-    border: 1px solid var(--steel-blue-200);
-    background-color: var(--steel-blue-200);
+    border: 1px solid var(--steel-blue-300);
+    background-color: var(--steel-blue-300);
     border-radius: 7px;
   }
   
@@ -1165,8 +1165,8 @@ footer i {
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 5px 0 5px;
-    border: 1px solid var(--steel-blue-100);
-    background-color: var(--steel-blue-100);
+    border: 1px solid var(--steel-blue-200);
+    background-color: var(--steel-blue-200);
     border-radius: 7px;
     
   }
@@ -1198,9 +1198,9 @@ footer i {
   }
 
   .progress-bar {
-    background: var(--steel-blue-400);
+    background: var(--steel-blue-500);
     border-radius: 6px;
-    border: 1px solid var(--steel-blue-400);
+    border: 1px solid var(--steel-blue-500);
   }
 
   .titlemargin {
@@ -1216,7 +1216,7 @@ footer i {
   #skills p {
     font-size: 0.9em;
     font-weight: 500;
-    color: var(--steel-blue-800);
+    color: var(--steel-blue-900);
   }
 
   .progress-bar-text {

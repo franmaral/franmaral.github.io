@@ -1,22 +1,11 @@
 /* Color Palette
 /*https://uicolors.app/
---steel-blue-50: #f1f9fe;
---steel-blue-100: #e1f3fd;
---steel-blue-200: #bde7fa;
---steel-blue-300: #82d5f7;
---steel-blue-400: #40c1f0;
---steel-blue-500: #17aae0;
---steel-blue-600: #0a87bd;
---steel-blue-700: #096d9b;
---steel-blue-800: #0c5b80;
---steel-blue-900: #104c6a;
---steel-blue-950: #0b3046;
 */
 
 /* Global styles
 ---------------------------------*/
 
-/* Custom properties/variables  */
+/* Custom properties/variables */
 :root {
   --steel-blue-50: #f0f1fd;
   --steel-blue-100: #e3e5fc;
